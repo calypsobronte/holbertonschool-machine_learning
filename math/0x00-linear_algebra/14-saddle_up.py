@@ -4,6 +4,6 @@
 import numpy as np
 
 
-def np_cat(mat1, mat2, axis=0):
+def np_matmul(mat1, mat2):
     """ matrix """
     return np.matmul(mat1, mat2)
