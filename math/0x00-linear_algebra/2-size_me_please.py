@@ -3,6 +3,7 @@
 
 
 def matrix_shape(matrix):
+    """ matrix """
     mat1 = []
     mat2 = matrix
     while isinstance(mat2, list):
