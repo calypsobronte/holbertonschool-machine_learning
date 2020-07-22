@@ -9,8 +9,8 @@ t2 = 1600
 y1 = np.exp((r / t1) * x)
 y2 = np.exp((r / t2) * x)
 
-plt.plot(x, y1, label = "C-14", color = 'red', linestyle='dashed')
-plt.plot(x, y2, label = "Ra-226", color = 'green')
+plt.plot(x, y1, label="C-14", color='red', linestyle='dashed')
+plt.plot(x, y2, label="Ra-226", color='green')
 plt.xlabel('Time (years)')
 plt.ylabel('Fraction Remaining')
 plt.title("Exponential Decay of Radioactive Elements")
