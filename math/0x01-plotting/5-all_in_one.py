@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -32,5 +31,43 @@ grid = plt.GridSpec(3, 2, wspace=0.5, hspace=0.5)
 
 # 0
 plt.subplot(grid[0, 0])
-plt.plot(y, color = 'red')
+plt.plot(y0, color = 'red')
+plt.xlim(0, 10)
+
+#1
+plt.subplot(grid[0, 1])
+plt.scatter(x1, y1, color = "magenta")
+plt.xlabel('Height (in)', fontsize='x-small')
+plt.ylabel('Weight (lbs)', fontsize='x-small')
+plt.title("Men's Height vs Weight", fontsize='x-small')
+
+#2
+plt.subplot(grid[1, 0])
+plt.plot(x2, y2)
+plt.xlabel('Time (years)', fontsize='x-small')
+plt.ylabel('Fraction Remaining', fontsize='x-small')
+plt.title("Exponential Decay of C-14", fontsize='x-small')
+plt.xlim([0, 28650])
+plt.yscale('log')
+
+#3
+plt.subplot(grid[1, 1])
+plt.plot(x3, y31, label = "C-14", color = 'red', linestyle='dashed')
+plt.plot(x3, y32, label = "Ra-226", color = 'green')
+plt.xlabel('Time (years)',fontsize='x-small')
+plt.ylabel('Fraction Remaining', fontsize='x-small')
+plt.title("Exponential Decay of Radioactive Elements", fontsize='x-small')
+plt.xlim([0, 20000])
+plt.ylim(0, 1)
+plt.legend()
+
+#4
+plt.subplot(grid[2, :])
+plt.hist(student_grades, bins = range(0, 110, 10), edgecolor = "black")
+plt.xticks(ticks=range(0,110,10))
+plt.xlim(0, 100)
+plt.ylim(0, 30)
+plt.xlabel('Grades', fontsize='x-small')
+plt.ylabel('Number of Students', fontsize='x-small')
+plt.title("Project A", fontsize='x-small')
 plt.show()
