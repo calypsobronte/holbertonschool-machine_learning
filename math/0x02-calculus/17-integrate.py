@@ -8,8 +8,6 @@ def poly_integral(poly, C=0):
         return None
     if not isinstance(C, int):
         return None
-    if len(poly) == 1:
-        return [0]
     if poly == [0]:
         return [C]
 
