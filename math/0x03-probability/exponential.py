@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 ''' func '''
+pi = 3.1415926536
+e = 2.7182818285
 
 
 class Exponential:
     ''' func '''
-    pi = 3.1415926536
-    e = 2.7182818285
 
     def __init__(self, data=None, lambtha=1.):
         ''' func '''

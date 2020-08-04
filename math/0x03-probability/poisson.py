@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 ''' func '''
+pi = 3.1415926536
+e = 2.7182818285
 
 
 def factorial(n):
@@ -9,8 +11,6 @@ def factorial(n):
 
 class Poisson:
     ''' func '''
-    pi = 3.1415926536
-    e = 2.7182818285
 
     def __init__(self, data=None, lambtha=1.):
         ''' func '''

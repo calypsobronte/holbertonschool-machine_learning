@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 ''' func '''
+pi = 3.1415926536
+e = 2.7182818285
 
 
 def erf(x):
@@ -11,9 +13,6 @@ def erf(x):
 
 class Normal:
     ''' func '''
-    pi = 3.1415926536
-    e = 2.7182818285
-
     def __init__(self, data=None, mean=0., stddev=1.):
         ''' func '''
         self.data = data
