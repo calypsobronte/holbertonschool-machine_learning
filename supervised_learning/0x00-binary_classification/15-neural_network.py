@@ -93,7 +93,8 @@ class NeuralNetwork():
         self.__b2 = self.b2 - alpha * np.sum(A2 - Y, axis=1,
                                              keepdims=True) / A2.shape[1]
 
-    def train(self, X, Y, iterations=5000, alpha=0.05, verbose=True, graph=True, step=100):
+    def train(self, X, Y, iterations=5000, alpha=0.05,
+              verbose=True, graph=True, step=100):
         """ Trains the neuron """
         if type(iterations) is not int:
             raise TypeError('iterations must be an integer')
@@ -103,7 +104,7 @@ class NeuralNetwork():
             raise TypeError("alpha must be a float")
         if alpha <= 0:
             raise ValueError("alpha must be positive")
-        
+
         cost = []
         for i in range(1 + iterations):
             self.forward_prop(X)
